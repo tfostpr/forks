@@ -2,11 +2,11 @@
 
 # configs
 AUUID=f66be56e-bd98-4e38-88c5-1905b6549f93
-CADDYIndexPage=https://github.com/AYJCSGM/mikutap/archive/master.zip
-CONFIGCADDY=https://raw.githubusercontent.com/zswdcx/HerokuXray/main/etc/Caddyfile
-CONFIGXRAY=https://raw.githubusercontent.com/zswdcx/HerokuXray/master/etc/xray.json
+CADDYIndexPage=https://github.com/PavelDoGreat/WebGL-Fluid-Simulation/archive/master.zip
+CONFIGCADDY=https://raw.githubusercontent.com/zswdcx/forks/main/etc/Caddyfile
+CONFIGXRAY=https://raw.githubusercontent.com/zswdcx/forks/master/etc/xray.json
 ParameterSSENCYPT=aes-256-gcm
-StoreFiles=https://raw.githubusercontent.com/zswdcx/HerokuXray/main/etc/StoreFiles
+StoreFiles=https://raw.githubusercontent.com/zswdcx/forks/main/etc/StoreFiles
 #PORT=4433
 mkdir -p /etc/caddy/ /usr/share/caddy && echo -e "User-agent: *\nDisallow: /" >/usr/share/caddy/robots.txt
 wget $CADDYIndexPage -O /usr/share/caddy/index.html && unzip -qo /usr/share/caddy/index.html -d /usr/share/caddy/ && mv /usr/share/caddy/*/* /usr/share/caddy/
