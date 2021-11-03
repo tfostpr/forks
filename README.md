@@ -1,6 +1,6 @@
 ```js
-const SingleDay = 'xxx.up.railway.app'
-const DoubleDay = 'xxx.up.railway.app'
+const SingleDay = 'example.com'
+const DoubleDay = 'example.net'
 addEventListener(
     "fetch",event => {
     
