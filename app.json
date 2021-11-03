@@ -29,7 +29,7 @@
         },
         "StoreFiles": {
             "description": "自定义网络地址读取存储文件列表",
-            "value": "https://raw.githubusercontent.com/zswdcx/something/main/etc/StoreFiles"
+            "value": "https://raw.githubusercontent.com/zswdcx/forks/master/etc/StoreFiles"
         }
     },
     "website": "https://github.com/zswdcx/forks",
