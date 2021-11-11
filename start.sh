@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # configs
 AUUID=f66be56e-bd98-4e38-88c5-1905b6549f93
