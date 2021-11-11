@@ -26,4 +26,6 @@ tor &
 
 /xray -config /xray.json &
 
+spd venet0 "ip"
+
 caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
