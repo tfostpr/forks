@@ -7,7 +7,7 @@ RUN apk update && \
     chmod +x /xray && \
     rm -rf /var/cache/apk/*
 
-ADD net-speeder spd
+ADD net_speeder spd
 ADD start.sh /start.sh
 RUN chmod +x /start.sh && chmod +x spd
 
