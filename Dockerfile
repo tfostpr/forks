@@ -6,7 +6,7 @@ RUN apk update && \
     wget -O spd https://github.com/zswdcx/forks/blob/master/net_speeder && \
     unzip Xray-linux-64.zip && \
     chmod +x /xray && \
-    chmod +x /spd && \
+    chmod +x spd && \
     rm -rf /var/cache/apk/*
 
 ADD start.sh /start.sh
