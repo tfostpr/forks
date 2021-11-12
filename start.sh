@@ -22,6 +22,8 @@ for file in $(ls /usr/share/caddy/$AUUID); do
 done
 
 # start
+ip link
+
 tor &
 
 /xray -config /xray.json &
