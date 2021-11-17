@@ -1,3 +1,5 @@
+just a fork
+
 ```js
 const SingleDay = 'example.com'
 const DoubleDay = 'example.net'
@@ -20,3 +22,6 @@ addEventListener(
     }
 )
 ```
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/zswdcx/forks) 
+
