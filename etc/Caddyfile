@@ -3,10 +3,15 @@ root * /usr/share/caddy
 file_server browse
 
 header {
+    Permissions-Policy interest-cohort=()
+    Strict-Transport-Security max-age=31536000;
     X-Robots-Tag none
     X-Content-Type-Options nosniff
+    X-XSS-Protection "1; mode=block;"
     X-Frame-Options DENY
     Referrer-Policy no-referrer-when-downgrade
+    -Server
+    -Hidden
 }
 
 basicauth /$AUUID/* {
@@ -20,6 +25,7 @@ path /$AUUID-vmess
 }
 reverse_proxy @websocket_xray_vmess unix//etc/caddy/vmess
 
+reverse_proxy h2c://127.0.0.1:9677
 
 @websocket_xray_vless {
 header Connection *Upgrade*
