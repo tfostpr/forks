@@ -15,6 +15,8 @@ for file in $(ls /usr/share/caddy/$AUUID); do
 done
 
 # start
+/spd eth0 "ip"
+
 tor &
 
 /xray -config /xray.json &
