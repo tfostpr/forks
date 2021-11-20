@@ -25,7 +25,6 @@ path /$AUUID-vmess
 }
 reverse_proxy @websocket_xray_vmess unix//etc/caddy/vmess
 
-reverse_proxy h2c://127.0.0.1:9677
 
 @websocket_xray_vless {
 header Connection *Upgrade*
